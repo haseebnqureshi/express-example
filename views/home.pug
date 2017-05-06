@@ -1,0 +1,13 @@
+html
+	head
+		title Testing
+	body
+		h1= greeting
+		p= message
+		ul
+			each list in lists
+				li
+					each value, key in list
+						div= key + ': ' + value
+
+		script(src="/app.js")
